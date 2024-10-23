@@ -1,0 +1,70 @@
+/* Style principal de la barre de navigation */
+.navbar {
+  height: 10vh;                    /* Hauteur fixe de 10% de la hauteur de la fenêtre */
+  background: #1b1919;             /* Couleur de fond sombre */
+  display: flex;                   /* Utilise Flexbox pour l'alignement */
+  justify-content: space-between;  /* Répartit l'espace entre les éléments (logo, menu, bouton) */
+  align-items: center;             /* Centre verticalement tous les éléments */
+  padding: 0 2rem;                 /* Ajoute de l'espace à gauche et à droite */
+}
+
+/* Style du logo NATURE */
+.navbar-logo {
+  color: white;                    /* Couleur du texte en blanc */
+  text-decoration: none;           /* Enlève le soulignement du lien */
+  font-size: 2rem;                /* Taille de la police pour le logo */
+}
+
+/* Style de la liste des liens de navigation */
+.navbar ul {
+  display: flex;                   /* Aligne les éléments horizontalement */
+  list-style: none;               /* Enlève les puces de la liste */
+  margin: 0;                      /* Enlève les marges par défaut */
+  padding: 0;                     /* Enlève le padding par défaut */
+  align-items: center;            /* Centre verticalement les éléments de la liste */
+}
+
+/* Style de chaque élément de la liste */
+.nav-items {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+
+/* Style des liens dans les éléments de navigation */
+.nav-item a {
+  color: white;                   /* Couleur du texte en blanc */
+  text-decoration: none;          /* Enlève le soulignement des liens */
+  font-size: 1.1rem;             /* Taille de la police pour les liens */
+  padding: 0.5rem 1rem;          /* Espace autour du texte des liens */
+  transition: background-color 0.3s; /* Animation douce pour l'effet hover */
+  padding: 6px 16px;
+}
+
+/* Effet au survol des liens */
+.nav-item a:hover {
+  background-color: rgb(0, 212, 212); /* Couleur de fond au survol */
+  border-radius: 4px;             /* Coins arrondis au survol */
+}
+
+/* Style du bouton Sign Up */
+.btn {
+  padding: 0.5rem 1rem;          /* Espace à l'intérieur du bouton */
+  background-color: rgb(0, 212, 212); /* Couleur de fond du bouton */
+  color: white;                   /* Couleur du texte du bouton */
+  border: none;                   /* Enlève la bordure du bouton */
+  border-radius: 4px;            /* Coins arrondis du bouton */
+  cursor: pointer;               /* Change le curseur au survol */
+  font-size: 1.1rem;            /* Taille de la police du bouton */
+}
+
+/* Effet au survol du bouton */
+.btn:hover {
+  background-color: rgb(0, 190, 190); /* Couleur légèrement plus foncée au survol */
+}
+
+

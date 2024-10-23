@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom"; // Remplace Switch par Routes
+import Navbar from "./component/Navbar/Navbar"; // Assure-toi que ce chemin est correct
+import Services from "./component/serivces/service";
+import Product from "./pages/produit/produit";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes> {/* Remplace Switch par Routes */}
+      <Route path= "/" element={<h1>hme</h1>} />
+        <Route path= "/services" element={<Services/>} />
+        <Route path= "/products" element={<Product/>} />
+        <Route path= "/services" element={<Services/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
